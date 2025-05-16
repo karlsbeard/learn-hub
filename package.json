@@ -9,8 +9,7 @@
 		"format": "biome format --write ./src",
 		"lint": "biome lint ./src",
 		"check": "biome check --write-unsafe ./src",
-		"pre-commit": "npx lint-staged",
-		"commit-msg": "npx --no-install commitlint --edit $1"
+		"pre-commit": "npx lint-staged"
 	},
 	"engines": {
 		"node": ">=18.17.1",
