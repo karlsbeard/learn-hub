@@ -7,12 +7,10 @@ export default function About() {
 				<section className="mb-10">
 					<h2 className="text-2xl font-bold mb-4">网站简介</h2>
 					<p className="text-lg mb-4">
-						Learn Hub
-						是我个人的学习笔记和技术博客网站，旨在记录我在技术探索和学习过程中的心得体会、实践经验和知识沉淀。
+						Learn Hub 是我个人的学习笔记和技术博客网站，旨在记录我在技术探索和学习过程中的心得体会、实践经验和知识沉淀。
 					</p>
 					<p className="text-lg mb-4">
-						本站采用 Next.js
-						开发，通过服务端渲染和静态站点生成技术，为访问者提供快速、流畅的浏览体验。
+						本站采用 Next.js 开发，通过服务端渲染和静态站点生成技术，为访问者提供快速、流畅的浏览体验。
 					</p>
 				</section>
 
@@ -34,8 +32,7 @@ export default function About() {
 						<div>
 							<h3 className="text-xl font-semibold mb-2">人工智能</h3>
 							<p className="text-lg">
-								包括 Python 编程、PyTorch 深度学习框架、LangChain
-								应用开发、检索增强生成（RAG）、AI Agent
+								包括 Python 编程、PyTorch 深度学习框架、LangChain 应用开发、检索增强生成（RAG）、AI Agent
 								及大规模内容处理（MCP）等技术。
 							</p>
 						</div>

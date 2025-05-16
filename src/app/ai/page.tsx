@@ -64,9 +64,7 @@ export default function AIHome() {
 			<div className="mt-16 bg-gray-50 rounded-lg p-8">
 				<h2 className="text-2xl font-bold mb-4">学习路线推荐</h2>
 				<ol className="list-decimal pl-6 space-y-3">
-					<li>
-						从 Python 基础开始，掌握数据处理、科学计算和基础机器学习库的使用
-					</li>
+					<li>从 Python 基础开始，掌握数据处理、科学计算和基础机器学习库的使用</li>
 					<li>学习 PyTorch 框架，理解深度学习模型的构建、训练和优化方法</li>
 					<li>探索 LangChain 和 RAG 技术，构建基于大型语言模型的智能应用</li>
 					<li>掌握 AI Agent 开发，实现更复杂的智能系统和自主决策能力</li>

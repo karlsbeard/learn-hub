@@ -3,7 +3,8 @@
 	"vcs": {
 		"enabled": false,
 		"clientKind": "git",
-		"useIgnoreFile": false
+		"useIgnoreFile": false,
+		"defaultBranch": "main"
 	},
 	"files": {
 		"ignoreUnknown": false,
@@ -11,7 +12,8 @@
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "tab",
+		"lineWidth": 120
 	},
 	"organizeImports": {
 		"enabled": true

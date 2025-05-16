@@ -53,10 +53,7 @@ const Navigation = () => {
 					<div className="hidden md:flex md:items-center md:space-x-8">
 						{navItems.map((item) => (
 							<div key={item.name} className="relative group">
-								<Link
-									href={item.href}
-									className="px-3 py-2 text-sm font-medium hover:text-blue-600 transition-colors"
-								>
+								<Link href={item.href} className="px-3 py-2 text-sm font-medium hover:text-blue-600 transition-colors">
 									{item.name}
 								</Link>
 								{item.submenu && (
@@ -97,12 +94,7 @@ const Navigation = () => {
 									stroke="currentColor"
 									aria-hidden="true"
 								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth="2"
-										d="M6 18L18 6M6 6l12 12"
-									/>
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
 								</svg>
 							) : (
 								<svg
@@ -113,12 +105,7 @@ const Navigation = () => {
 									stroke="currentColor"
 									aria-hidden="true"
 								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth="2"
-										d="M4 6h16M4 12h16M4 18h16"
-									/>
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
 								</svg>
 							)}
 						</button>
