@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Learn Hub - 个人学习与技术分享网站
 
-## Getting Started
+这是一个基于 Next.js 构建的个人学习笔记和技术分享网站，旨在记录学习历程、沉淀技术知识，并探索前端最佳实践。
 
-First, run the development server:
+## 项目特点
+
+- 基于 Next.js App Router 构建，支持服务端渲染和静态站点生成
+- 支持 SEO 优化，通过元数据和 OpenGraph 图像提升社交媒体分享体验
+- 响应式布局，适配各种设备屏幕
+- 使用 TypeScript 提供类型安全
+- 使用 Biome 进行代码格式化和 linting
+- 采用模块化设计，便于扩展和维护
+
+## 主要技术栈
+
+- **框架**：Next.js 15.x
+- **前端库**：React 19
+- **样式**：Tailwind CSS 4.x
+- **代码质量**：Biome
+- **部署目标**：Vercel / GitHub Pages
+
+## 内容模块
+
+网站主要包含两大内容模块：
+
+### 人工智能
+
+- Python
+- PyTorch
+- LangChain
+- RAG（检索增强生成）
+- AI Agent
+- MCP（大规模内容处理）
+
+### 前端技术
+
+- React
+- Vue
+- Webpack
+- Next.js
+- SSR（服务端渲染）
+- SEO（搜索引擎优化）
+
+## 快速开始
+
+1. 克隆仓库
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/learn-hub.git
+cd learn-hub
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 安装依赖
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. 启动开发服务器
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. 打开浏览器访问 [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 构建与部署
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+构建生产版本：
 
-## Deploy on Vercel
+```bash
+pnpm build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+本地预览生产版本：
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm start
+```
+
+## 项目结构
+
+```
+learn-hub/
+├── src/
+│   ├── app/              # Next.js App Router 路由定义
+│   ├── components/       # 可复用组件
+│   └── types/            # TypeScript 类型定义
+├── public/               # 静态资源
+├── biome.json            # Biome 配置
+└── package.json          # 项目依赖
+```
+
+## 代码规范
+
+本项目使用 Biome 进行代码格式化和 linting，可通过以下命令运行：
+
+```bash
+# 格式化代码
+pnpm format
+
+# 检查代码
+pnpm lint
+
+# 运行所有检查并尝试修复
+pnpm check
+```
+
+## License
+
+MIT
