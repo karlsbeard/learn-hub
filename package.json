@@ -41,6 +41,6 @@
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": ["biome lint --fix", "biome format --write", "git add"],
-		"*.{json,md,yml,yaml}": ["biome format --write", "git add"]
+		"*.{json,md,yml,yaml}": ["biome format --write .", "git add"]
 	}
 }
