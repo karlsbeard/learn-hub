@@ -8,8 +8,11 @@
 		"start": "next start",
 		"format": "biome format --write ./src",
 		"lint": "biome lint ./src",
-		"check": "biome check --write-unsafe ./src",
-		"pre-commit": "npx lint-staged"
+		"check": "biome check --write ./src",
+		"check:unsafe": "biome check --write-unsafe ./src",
+		"pre-commit": "npx lint-staged",
+		"format:check": "biome format --write ./src && git diff --name-only",
+		"format:changed": "biome format --changed"
 	},
 	"engines": {
 		"node": ">=18.17.1",
@@ -37,11 +40,7 @@
 		"pre-commit": "npx lint-staged"
 	},
 	"lint-staged": {
-		"*.{js,jsx,ts,tsx}": [
-			"biome lint --fix",
-			"biome format --write",
-			"git add"
-		],
+		"*.{js,jsx,ts,tsx}": ["biome lint --fix", "biome format --write", "git add"],
 		"*.{json,md,yml,yaml}": ["biome format --write", "git add"]
 	}
 }

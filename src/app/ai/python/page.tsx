@@ -5,32 +5,27 @@ export default function PythonPage() {
 		{
 			title: "Python基础知识回顾",
 			date: "2023-09-20",
-			summary:
-				"对Python语言核心概念的全面回顾，包括变量、数据类型、控制流、函数和类等基础知识点。",
+			summary: "对Python语言核心概念的全面回顾，包括变量、数据类型、控制流、函数和类等基础知识点。",
 		},
 		{
 			title: "Python高级特性与用法",
 			date: "2023-09-25",
-			summary:
-				"深入探讨Python的高级特性，包括装饰器、生成器、上下文管理器、元类等进阶概念。",
+			summary: "深入探讨Python的高级特性，包括装饰器、生成器、上下文管理器、元类等进阶概念。",
 		},
 		{
 			title: "数据处理利器：Pandas实战",
 			date: "2023-10-05",
-			summary:
-				"学习使用Pandas库进行高效数据处理，包括数据清洗、转换、聚合和分析等常用操作。",
+			summary: "学习使用Pandas库进行高效数据处理，包括数据清洗、转换、聚合和分析等常用操作。",
 		},
 		{
 			title: "科学计算基础：NumPy详解",
 			date: "2023-10-12",
-			summary:
-				"掌握NumPy库的核心功能，理解数组操作、广播机制、向量化计算等科学计算基础。",
+			summary: "掌握NumPy库的核心功能，理解数组操作、广播机制、向量化计算等科学计算基础。",
 		},
 		{
 			title: "机器学习入门：Scikit-learn实践",
 			date: "2023-10-18",
-			summary:
-				"使用Scikit-learn库实现基础机器学习算法，包括分类、回归、聚类和降维等任务。",
+			summary: "使用Scikit-learn库实现基础机器学习算法，包括分类、回归、聚类和降维等任务。",
 		},
 	];
 
@@ -94,10 +89,7 @@ plt.show()`,
 	return (
 		<div className="container mx-auto px-4 py-12">
 			<div className="mb-8">
-				<Link
-					href="/ai"
-					className="text-blue-600 hover:underline inline-flex items-center"
-				>
+				<Link href="/ai" className="text-blue-600 hover:underline inline-flex items-center">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="16"
@@ -127,17 +119,11 @@ plt.show()`,
 					<h2 className="text-2xl font-bold mb-6">最新文章</h2>
 					<div className="space-y-8">
 						{pythonArticles.map((article) => (
-							<div
-								key={article.title}
-								className="border rounded-lg p-6 hover:shadow-md transition-shadow"
-							>
+							<div key={article.title} className="border rounded-lg p-6 hover:shadow-md transition-shadow">
 								<h3 className="text-xl font-bold mb-2">{article.title}</h3>
 								<div className="text-sm text-gray-500 mb-3">{article.date}</div>
 								<p className="text-gray-700 mb-4">{article.summary}</p>
-								<Link
-									href="#"
-									className="text-blue-600 font-medium hover:underline"
-								>
+								<Link href="#" className="text-blue-600 font-medium hover:underline">
 									阅读全文 →
 								</Link>
 							</div>
@@ -150,13 +136,8 @@ plt.show()`,
 						<h2 className="text-2xl font-bold mb-6">实用代码片段</h2>
 						<div className="space-y-6">
 							{codeSnippets.map((snippet) => (
-								<div
-									key={snippet.title}
-									className="border rounded-lg overflow-hidden"
-								>
-									<div className="bg-gray-100 px-4 py-2 font-medium">
-										{snippet.title}
-									</div>
+								<div key={snippet.title} className="border rounded-lg overflow-hidden">
+									<div className="bg-gray-100 px-4 py-2 font-medium">{snippet.title}</div>
 									<pre className="bg-gray-800 text-gray-100 p-4 overflow-x-auto text-sm">
 										<code>{snippet.code}</code>
 									</pre>

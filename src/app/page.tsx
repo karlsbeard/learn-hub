@@ -34,12 +34,8 @@ export default function Home() {
 		<div className="container mx-auto px-4 py-12">
 			{/* Hero Section */}
 			<section className="text-center mb-16">
-				<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-					Learn Hub
-				</h1>
-				<p className="text-xl mb-8 max-w-3xl mx-auto">
-					记录学习历程，分享技术心得，构建个人知识体系
-				</p>
+				<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Learn Hub</h1>
+				<p className="text-xl mb-8 max-w-3xl mx-auto">记录学习历程，分享技术心得，构建个人知识体系</p>
 				<div className="flex justify-center gap-4">
 					<Link
 						href="/about"
@@ -61,10 +57,7 @@ export default function Home() {
 				<h2 className="text-3xl font-bold mb-8 text-center">学习主题</h2>
 				<div className="grid md:grid-cols-2 gap-8">
 					{categories.map((category) => (
-						<div
-							key={category.title}
-							className="border rounded-lg p-6 hover:shadow-lg transition-shadow"
-						>
+						<div key={category.title} className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
 							<h3 className="text-2xl font-bold mb-3">{category.title}</h3>
 							<p className="text-gray-600 mb-4">{category.description}</p>
 							<div className="flex flex-wrap gap-2 mb-4">
@@ -78,10 +71,7 @@ export default function Home() {
 									</Link>
 								))}
 							</div>
-							<Link
-								href={category.href}
-								className="text-blue-600 font-medium hover:underline"
-							>
+							<Link href={category.href} className="text-blue-600 font-medium hover:underline">
 								查看全部 →
 							</Link>
 						</div>
@@ -98,17 +88,11 @@ export default function Home() {
 						<div className="bg-gray-100 h-48" />
 						<div className="p-4">
 							<div className="text-sm text-gray-500 mb-2">2023-10-15</div>
-							<h3 className="text-xl font-bold mb-2">
-								Next.js 应用路由深入解析
-							</h3>
+							<h3 className="text-xl font-bold mb-2">Next.js 应用路由深入解析</h3>
 							<p className="text-gray-600 mb-3 line-clamp-3">
-								探索 Next.js App Router 的工作原理及其优势，了解如何构建高性能的
-								SSR 应用...
+								探索 Next.js App Router 的工作原理及其优势，了解如何构建高性能的 SSR 应用...
 							</p>
-							<Link
-								href="/frontend/nextjs"
-								className="text-blue-600 font-medium hover:underline"
-							>
+							<Link href="/frontend/nextjs" className="text-blue-600 font-medium hover:underline">
 								继续阅读 →
 							</Link>
 						</div>
@@ -121,10 +105,7 @@ export default function Home() {
 							<p className="text-gray-600 mb-3 line-clamp-3">
 								从基础概念到实践应用，掌握 LangChain 框架的核心功能和最佳实践...
 							</p>
-							<Link
-								href="/ai/langchain"
-								className="text-blue-600 font-medium hover:underline"
-							>
+							<Link href="/ai/langchain" className="text-blue-600 font-medium hover:underline">
 								继续阅读 →
 							</Link>
 						</div>
@@ -137,10 +118,7 @@ export default function Home() {
 							<p className="text-gray-600 mb-3 line-clamp-3">
 								检索增强生成（RAG）系统的设计原理与实现方法，提升AI应用的准确性和可靠性...
 							</p>
-							<Link
-								href="/ai/rag"
-								className="text-blue-600 font-medium hover:underline"
-							>
+							<Link href="/ai/rag" className="text-blue-600 font-medium hover:underline">
 								继续阅读 →
 							</Link>
 						</div>

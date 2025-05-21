@@ -43,9 +43,7 @@ export default function FrontendHome() {
 	return (
 		<div className="container mx-auto px-4 py-12">
 			<h1 className="text-4xl font-bold mb-4 text-center">前端技术笔记</h1>
-			<p className="text-xl mb-12 text-center max-w-3xl mx-auto">
-				前端开发技术栈与最佳实践，从框架基础到高级应用
-			</p>
+			<p className="text-xl mb-12 text-center max-w-3xl mx-auto">前端开发技术栈与最佳实践，从框架基础到高级应用</p>
 
 			<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 				{frontendTopics.map((topic) => (
